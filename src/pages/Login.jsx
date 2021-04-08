@@ -3,10 +3,14 @@ import {
     GithubLoginButton
 } from 'react-social-login-buttons'
 
+
+const SERVER_URL = process.env.REACT_APP_SERVER_URL
+
 const Login = props => {
 
     const handleGoogleClick = () => {
         console.log('Google is clicked!')
+        window.location.href = `${SERVER_URL}/auth/google`
     }
 
     const handleGithubClick = () => {
