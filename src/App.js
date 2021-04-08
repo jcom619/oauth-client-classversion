@@ -12,17 +12,19 @@ const App = () => {
     return (
         <Router>
             <Navbar />
-            <Switch>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route path="/profile">
-                    <Profile/>
-                </Route>
-                <Route path="/login">
-                    <Login/>
-                </Route>
-            </Switch>
+            <div className="container">
+                <Switch>
+                    <Route exact path="/">
+                        <Home/>
+                    </Route>
+                    <Route path="/profile">
+                        <Profile/>
+                    </Route>
+                    <Route path="/login">
+                        <Login/>
+                    </Route>
+                </Switch>
+            </div>
         </Router>
     )
 }

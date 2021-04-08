@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
