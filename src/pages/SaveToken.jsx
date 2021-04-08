@@ -5,7 +5,7 @@ import jwt from 'jsonwebtoken'
 const SaveToken = ({ setUser }) => {
     const query = new URLSearchParams(useLocation().search)
     const token = query.get('token')
-
+    
     // https://reactrouter.com/web/example/query-parameters
     useEffect(() => {
         // grabs the token from the query param and saves it to localstorage
